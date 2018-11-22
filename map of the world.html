@@ -4,28 +4,9 @@
 
 <head>
   <title> Map of the world in binary form</title>
+  <link rel="stylesheet" href="styles.css">
+  
 <style>
-
-body{
-  margin:0 auto;
-  width:100%
-}
-
-table{
-  width:90%;
-  margin: 0 auto;
-}
-
-td{
-  font-size:10px;
-  color:rgba(202,202,202,0.4);
-  line-height:14.3px;
-}
-
-.contour{
-  color:red;
-}
-
 </style>
 </head>
 
@@ -122,20 +103,13 @@ td{
       <tr id="line4">
         <!-- 14 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td>
 
-		    <!-- 1 batch--><td>0</td> <td class="contour">1</td> <td class="contour">0</td><td class="contour">0</td> <td class="contour">1</td>
-        <td class="contour">1</td> <td class="contour">0</td> <td class="contour">0</td> <td class="contour">1</td> <td class="contour">1</td>
+		<!-- 1 batch--><td>0</td> <td class="contour">1</td> <td class="contour">0</td><td class="contour">0</td> <td class="contour">1</td><td class="contour">1</td> <td class="contour">0</td> <td class="contour">0</td> <td class="contour">1</td> <td class="contour">1</td>
         <!-- 2 batch--><td class="contour">0</td> <td class="contour">1</td> <td class="contour">0</td><td class="contour">1</td> <td class="contour">1</td><td class="contour">1</td> <td class="contour">0</td> <td class="contour">0</td> <td class="contour">1</td> <td class="contour">1</td>
-        <!-- 3 batch--><td class="contour">0</td> <td class="contour">0</td> <td class="contour">0</td><td class="contour">0</td> <td class="contour">1</td>
-        <td class="contour">0</td> <td class="contour">1</td> <td class="contour">0</td> <td class="contour">0</td> <td class="contour">1</td>
+        <!-- 3 batch--><td class="contour">0</td> <td class="contour">0</td> <td class="contour">0</td><td class="contour">0</td> <td class="contour">1</td><td class="contour">0</td> <td class="contour">1</td> <td class="contour">0</td> <td class="contour">0</td> <td class="contour">1</td
+        <!-- 4 batch--><td class="contour">1</td> <td>1</td> <td>1</td> <td class="contour">1</td> <td class="contour">1</td> <td class="contour">1</td> <td class="contour">1</td><td class="contour">1</td> <td>0</td><td>1</td>
+        <!-- 5 batch--><td>0</td> <td>0</td> <td>0</td> <td class="contour">0</td> <td class="contour">0</td> <td class="contour">1</td> <td class="contour">0</td><td class="contour" >0</td> <td class="contour">0</td><td class="contour">0</td>
 
-        <!-- 4 batch--><td class="contour">1</td> <td>1</td> <td>1</td> <td class="contour">1</td> <td class="contour">1</td> <td class="contour">1</td> <td class="contour">1</td>
-        <td class="contour">1</td> <td>0</td><td>1</td>
-
-        <!-- 5 batch--><td>0</td> <td>0</td> <td>0</td> <td class="contour">0</td> <td class="contour">0</td> <td class="contour">1</td> <td class="contour">0</td>
-        <td class="contour" >0</td> <td class="contour">0</td><td class="contour">0</td>
-
-        <!-- 6 batch--><td>0</td> <td >0</td> <td >0</td> <td class="contour">1</td> <td class="contour">0</td> <td class="contour">0</td> <td class="contour">0</td> <td>1</td>
-        <td>1</td><td >0</td>
+        <!-- 6 batch--><td>0</td> <td >0</td> <td >0</td> <td class="contour">1</td> <td class="contour">0</td> <td class="contour">0</td> <td class="contour">0</td> <td>1</td><td>1</td><td >0</td>
 
         <!-- 7 batch--><td>0</td><td>1</td> <td class="contour">0</td> <td class="contour">0</td> <td class="contour">1</td> <td class="contour">1</td>
         <td class="contour">1</td> <td class="contour">0</td> <td class="contour">0</td> <td class="contour">1</td>
@@ -150,8 +124,7 @@ td{
         <td class="contour">1</td> <td class="contour">1</td> <td class="contour">0</td> <td class="contour">0</td> <td class="contour">1</td>
         <!-- 12 batch--><td class="contour">0</td> <td class="contour">1</td> <td class="contour">0</td><td class="contour">1</td> <td class="contour">0</td>
         <td class="contour">1</td> <td class="contour">1</td> <td class="contour">0</td> <td class="contour">0</td> <td class="contour">0</td>
-        <!-- 13 batch--><td class="contour">1</td> <td class="contour">1</td> <td class="contour">0</td> <td class="contour">0</td> <td class="contour">1</td> <td>1</td><td>1</td><td>1</td><td>0</td>
-        <td>1</td>
+        <!-- 13 batch--><td class="contour">1</td> <td class="contour">1</td> <td class="contour">0</td> <td class="contour">0</td> <td class="contour">1</td> <td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
         <!-- 14 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td>
       </tr>
 
@@ -277,8 +250,7 @@ td{
 
       <tr id="line9">
 			<!-- 13 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
-
-		   <!-- 1 batch--><td>0</td><td>1</td><td>0</td><td>1</td> <td class="contour">0</td> <td class="contour">1</td>
+			<!-- 1 batch--><td>0</td><td>1</td><td>0</td><td>1</td> <td class="contour">0</td> <td class="contour">1</td>
             <td class="contour">1</td> <td class="contour">0</td> <td class="contour">0</td> <td class="contour">0</td>
             <!-- 2 batch--><td class="contour">1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td>
             <td class="contour">1</td><td class="contour">1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">1</td>
@@ -544,12 +516,10 @@ td{
                 <!-- 1 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
                 <!-- 2 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
                 <!-- 3 batch--><td>0</td><td>1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td><td class="contour">1</td>
-                <!-- 5 batch--><td class="contour">1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td><td class="contour">1</td><td class="contour">1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">1</td>
-				<!-- 8 batch--><td class="contour">0</td><td class="contour">1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+                <!-- 4 batch--><td class="contour">1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td><td class="contour">1</td><td class="contour">1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">1</td>
+				<!-- 5 batch--><td class="contour">0</td><td class="contour">1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
 				<!-- 6 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
-
-
-				<!-- 8 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td class="contour">1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td><td class="contour">1</td>
+				<!-- 7 batch--><td>0</td><td>1</td><td>0</td><td class="contour">1</td><td class="contour">1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td><td class="contour">1</td>
                 <!-- 9 batch--><td class="contour">0</td><td class="contour">0</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td><td class="contour">0</td><td class="contour">1</td><td>0</td><td>0</td><td>1</td>
                 <!-- 10 batch--><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
 				<!-- 7 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
@@ -596,109 +566,116 @@ td{
                 <!-- 14 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td>
               </tr>
               <tr id="line25">
-                <!-- 3 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
-                <!-- 5 batch--><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
-                <!-- 4 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
-                <!-- 8 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
-                <!-- 9 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                <!-- 0 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+				<!-- 1 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
+                <!-- 2 batch--><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
+                <!-- 3 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td><td class="contour">1</td>
+                <!-- 4 batch--><td class="contour">0</td><td class="contour">1</td><td class="contour">0</td><td class="contour">1</td><td class="contour">1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td><td>1</td>
+                <!-- 5 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td>
                 <!-- 7 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
-                <!-- 10 batch--><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-                <!-- 11 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
-                <!-- 12 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td>
-                <!-- 13 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
-                <!-- 14 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td>
-                <!-- 6 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
-                <!-- 2 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
+                <!-- 7 batch--><td>0</td><td>0</td><td>0</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">0</td><td class="contour">0</td><td class="contour">0</td><td class="contour">0</td>
+                <!-- 8 batch--><td class="contour">0</td><td class="contour">1</td><td class="contour">0</td><td>0</td><td>0</td><td>1</td><td>1</td><td class="contour">0</td><td class="contour">0</td><td>0</td>
+                <!-- 9 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td>
+                <!-- 11 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td>
+				<!-- 10 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td class="contour">0</td><td class="contour">1</td>
+                <!-- 12 batch--><td class="contour">1</td><td class="contour">1</td><td class="contour">1</td><td class="contour">1</td><td class="contour">1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td><td class="contour">1</td>
+                <!-- 13 batch--><td class="contour">0</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
                 <!-- first batch--><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
               </tr>
 
         <tr id="line26">
+                <!-- 0 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
+                <!-- 1 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
                 <!-- 2 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
-                <!-- 3 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
-                <!-- first batch--><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
-                <!-- 5 batch--><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
-                <!-- 4 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
-                <!-- 8 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
-                <!-- 9 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td>
-                <!-- 7 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
-                <!-- 10 batch--><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-                <!-- 11 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
-                <!-- 12 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td>
-                <!-- 13 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
-                <!-- 14 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td>
+				<!-- 3 batch--><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td class="contour">1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td>
+                <!-- 4 batch--><td class="contour">1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
+                <!-- 5 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+                <!-- 6 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+                <!-- 7 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td class="contour">1</td><td class="contour">0</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td>
+                <!-- 8 batch--><td class="contour">1</td><td class="contour">1</td><td class="contour">1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td class="contour">0</td><td>1</td>
+                <!-- 9 batch--><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                <!-- 10 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
+                <!-- 11 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td class="contour">0</td><td class="contour">1</td><td class="contour">1</td>
+                <!-- 13 batch--><td class="contour">0</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td><td class="contour">1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td>
+                <!-- 14 batch--><td class="contour">0</td><td class="contour">0</td><td class="contour">0</td><td class="contour">0</td><td class="contour">0</td><td class="contour">0</td><td>0</td><td>1</td><td>1</td><td>1</td>
                 <!-- 6 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
               </tr>
 
               <tr id="line27">
-                <!-- 7 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
-                <!-- 10 batch--><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-                <!-- 11 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
-                <!-- 13 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
-                <!-- 6 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
-                <!-- 2 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
-                <!-- first batch--><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
-                <!-- 3 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
-                <!-- 5 batch--><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
-                <!-- 12 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td>
-                <!-- 4 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
-                <!-- 8 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
-                <!-- 9 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                <!-- 0 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
+                <!-- 1 batch--><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                <!-- 2 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
+                <!-- 3 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td>
+                <!-- 4 batch--><td class="contour">1</td><td class="contour">1</td><td class="contour">1</td><td class="contour">1</td><td class="contour">1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+                <!-- 5 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
+                <!-- 6 batch--><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                <!-- 7 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td class="contour">1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">0</td>
+                <!-- 8 batch--><td class="contour">0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
+				<!-- 9 batch--><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
+                <!-- 10 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td>
+                <!-- 11 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td class="contour">1</td>
+                <!-- 12 batch--><td class="contour">0</td><td class="contour">1</td><td class="contour">0</td><td class="contour">1</td><td class="contour">1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td><td class="contour">1</td>
+                <!-- 13 batch--><td class="contour">0</td><td class="contour">0</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td>
                 <!-- 14 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td>
               </tr>
               <tr id="line28">
-                <!-- 12 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td>
-                <!-- 4 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
-                <!-- 13 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
-                <!-- 6 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+                <!-- 0 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td>
+                <!-- 1 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
                 <!-- 2 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
-                <!-- first batch--><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
-                <!-- 3 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
-                <!-- 5 batch--><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
-                <!-- 8 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
-                <!-- 9 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td>
-                <!-- 14 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td>
-                <!-- 7 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
-                <!-- 10 batch--><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-                <!-- 11 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
+				<!-- 3 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td>
+                <!-- 4 batch--><td class="contour">1</td><td class="contour">1</td><td class="contour">1</td><td >1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+                <!-- 5 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
+                <!-- 6 batch--><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                <!-- 7 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td >1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">0</td>
+                <!-- 8 batch--><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
+                <!-- 9 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+                <!-- 10 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                <!-- 11 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="contour">1</td><td class="contour">1</td><td class="contour">1</td>
+                <!-- 12 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td class="contour">1</td><td class="contour">1</td><td class="contour">0</td><td class="contour">1</td>
+                <!-- 13 batch--><td class="contour">0</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                <!-- 14 batch--><td>0</td><td>1</td><td>0</td><td class="contour">0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
               </tr>
               <tr id="line29">
-                <!-- 9 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td>
-                <!-- 7 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
-                <!-- 10 batch--><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-                <!-- 11 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
-                <!-- 13 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                <!-- 0 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                <!-- 1 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+				<!-- 2 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
+                <!-- 3 batch--><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td class="contour">0</td><td class="contour">0</td><td class="contour">0</td><td class="contour">0</td>
+                <!-- 4 batch--><td class="contour">0</td><td class="contour">1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
+                <!-- 5 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
                 <!-- 14 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td>
                 <!-- 6 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
                 <!-- 2 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
-                <!-- first batch--><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
-                <!-- 3 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
-                <!-- 5 batch--><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
-                <!-- 12 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td>
-                <!-- 4 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
-                <!-- 8 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+                <!-- 1 batch--><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                <!-- 10 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
+                <!-- 11 batch--><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
+                <!-- 12 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td class="contour">0</td><td class="contour">1</td><td class="contour">1</td>
+                <!-- 4 batch--><td class="contour">0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+                <!-- 8 batch--><td>0</td><td class="contour">1</td><td class="contour">0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
               </tr>
 
               <tr id="line30">
-                <!-- 7 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
-                <!-- 10 batch--><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-                <!-- 11 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
-                <!-- 13 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
-                <!-- 6 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
-                <!-- 2 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
-                <!-- first batch--><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                <!-- 0 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
+                <!-- 1 batch--><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                <!-- 2 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
+                <!-- 3 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td class="contour">0</td><td class="contour">0</td><td class="contour">1</td>
+                <!-- 4 batch--><td class="contour">1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+                <!-- 5 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
+                <!-- 6 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+				<!-- 7 batch--><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
                 <!-- 3 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
                 <!-- 5 batch--><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
                 <!-- 12 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td>
                 <!-- 4 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
                 <!-- 8 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
-                <!-- 9 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td>
-                <!-- 14 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td>
+                <!-- 9 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td class="contour">0</td><td class="contour">1</td>
+                <!-- 14 batch--><td class="contour">0</td><td class="contour">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td>
               </tr>
               <tr id="line31">
-                <!-- first batch--><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
-                <!-- 2 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
-                <!-- 3 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
-                <!-- 4 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+                <!-- 0 batch--><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                <!-- 1 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
+                <!-- 2 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+				<!-- 3 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td class="contour">0</td><td class="contour">0</td>
+                <!-- 4 batch--><td class="contour">0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
                 <!-- 5 batch--><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
                 <!-- 6 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
                 <!-- 7 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
@@ -707,15 +684,16 @@ td{
                 <!-- 10 batch--><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
                 <!-- 11 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
                 <!-- 12 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td>
-                <!-- 13 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                <!-- 13 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td class="contour">1</td><td class="contour">1</td><td class="contour">0</td><td>0</td><td>1</td>
                 <!-- 14 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td>
               </tr>
               <tr id="line32">
-                <!-- 2 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
-                <!-- 3 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
-                <!-- first batch--><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
-                <!-- 5 batch--><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
-                <!-- 4 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+                <!-- 0 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
+                <!-- 1 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
+                <!-- 2 batch--><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                <!-- 3 batch--><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td><td class="contour">0</td><td class="contour">1</td>
+                <!-- 4 batch--><td class="contour">0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+				<!-- 5 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
                 <!-- 8 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
                 <!-- 9 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td>
                 <!-- 7 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
@@ -728,13 +706,14 @@ td{
               </tr>
 
               <tr id="line33">
-                <!-- 4 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+                <!-- 0 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
                 <!-- 8 batch--><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
                 <!-- 9 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td>
                 <!-- 7 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
-                <!-- 10 batch--><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                <!-- 4 batch--><td class="contour">0</td><td class="contour">0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
                 <!-- 11 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
-                <!-- 13 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                <!-- 4 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+				<!-- 13 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
                 <!-- 14 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td>
                 <!-- 6 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
                 <!-- 2 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
@@ -745,10 +724,11 @@ td{
               </tr>
 
               <tr id="line34">
-                <!-- 9 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                <!-- 0 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td>
                 <!-- 7 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td>
                 <!-- 10 batch--><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-                <!-- 11 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
+                <!-- 4 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
+				<!-- 11 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td>
                 <!-- 13 batch--><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td>
                 <!-- 14 batch--><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td>
                 <!-- 6 batch--><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td>
