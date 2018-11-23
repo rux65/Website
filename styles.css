@@ -102,3 +102,7 @@ label{
 	cursor:pointer;
 	display:inline;
 }
+
+#test{
+	opacity:0
+}
