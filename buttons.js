@@ -26,3 +26,11 @@ window.onclick = function(event) {
 function myFunction1(){
     $("#myDIV1").slideToggle();
 }
+
+
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").toggle();
+    });
+});
