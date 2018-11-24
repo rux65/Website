@@ -40,9 +40,26 @@ More information
 All paragraphs:
 Link buttons to instagram, facebook, twitter
 Any cool drowpdowns? slider images?
+Intra-site links
+a search bar
+do we want a nav bar?
+do we want a contact us page?
+do we want a leave feedback option?
+
 
 Extra pages:
 an index of all the start up and places? 
+maybe some nice summaries- like most popular places? (jquery has some nice slide bars) - on the index page?
+maybe a vote your favourite place? ( show counting) _ on the index place
+share buttons
+
+To be researched:
+maybe a cool annimation on our home page as an opening thing
+>enter - and something happens
+
+maybe some of the digits start shaking if the website has been idle for long 
+
+
 
 
 
