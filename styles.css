@@ -21,7 +21,7 @@ td{
 }
 
 
-/*buttons -----------------------------------------------------------------------------*/
+/*buttons on java - currently not working to duplicate-----------------------------------------------------------------------------*/
 
 
 .dropbtn {
@@ -54,7 +54,7 @@ td{
     z-index: 1;
 	padding:5px;
 	border-radius:10px;
-	
+
 
 }
 
@@ -65,44 +65,47 @@ td{
 	font-size:10px;
 	font-family:calibri;
 	font-size:12px;
-	
+
 }
 
 .dropdown a:hover {background-color: #ddd;}
 
-.show {display: block;} 
+.show {display: block;}
 
-/* buttons 2 --------------------------------------------------------*/
+/* buttons 2 using ceckbox - this works--------------------------------------------------------*/
 
 
 .ex1{
-background:grey;}
+  background:rgba(255,0,0,0.2);
+}
 
-.hide {
+input[type="checkbox"]{
+  display:none;
+}
+/*the above hides the checkbox*/
+
+
+.hide { /*this and below hides the div*/
   width:20%;
-  max-height: 99em;
-  opacity: 0;
-  height: auto;
-  transition: opacity 0.5s linear, max-height 0.5s linear;
+  display:none;
   position:absolute;
 }
+
 .hide p {
   padding: 10px;
   margin: 0;
   background:white;
 }
 
-.ex1 input[type="checkbox"]:checked + div {
-  opacity: 1;
+
+.ex1 input[type="checkbox"]:checked ~ div { /*this shows the hidden paragraph*/
   max-height: 0;
   border: none;
-  position:absolute; 
+  position:absolute;
+  display:block;
 }
+
 label{
 	cursor:pointer;
 	display:inline;
-}
-
-#test{
-	opacity:0
 }
