@@ -7,7 +7,7 @@
   width:100%;
 }
 .column_area article{
-  max-width:17%;
+  max-width:22%;
   /*margin:0.25rem;
   padding:0.5rem;*/
 }
@@ -83,3 +83,7 @@ img{
 /*.dropdown a:hover {background-color: #ddd;}*/
 
 .show {display: block;}
+
+h2{
+	color:#ff6600;
+}
