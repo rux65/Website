@@ -278,3 +278,11 @@ window.onmouseleave = function(event) {
 }
 
 
+$(".contour").live('mouseover', function(e) {
+  $(this).toggleClass('example');
+});
+
+
+
+
+
