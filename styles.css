@@ -170,10 +170,10 @@ label{
 
 
 .contour:hover, .contour1:hover,.contour2:hover,.contour3:hover{
-  animation: shake, example 1s; 
+  animation: example 3s; 
   
-  animation-iteration-count:3
-  /*animation: example 3s;*/
+  animation-iteration-count:infinite;
+  
 }
 
 .contour{
