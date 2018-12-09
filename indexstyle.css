@@ -79,7 +79,7 @@ p, li{
     position:absolute;
     float:left;
     background-color:white;
-    width:50rem;
+    width:40rem;
     height:30rem;
     overflow:auto;
     /*box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);*/
@@ -99,6 +99,7 @@ p, li{
 	font-family:calibri;
 	padding:3%;
 	cursor:normal;
+	padding-top:0;
 }
 
 .dropdown-content p{
@@ -123,11 +124,13 @@ p, li{
 }
 
 .dropdown-content a img{
-	width:80%;
+	width:90%;
 	margin-bottom:3%;
-	margin-left:10%;
-	margin-right:10%;
-	margin-top:3%;	
+	margin-left:5%;
+	margin-right:5%;
+	margin-top:3%;
+	max-height:25rem;
+	background-position:cover;
 }
 
 /*.dropdown a:hover {background-color: #ddd;}*/
