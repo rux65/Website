@@ -3513,7 +3513,7 @@ tbody.collapse.in {
   border-left: 4px solid transparent;
 }
 .dropup,
-.dropdown {
+.dropdown3 {
   position: relative;
 }
 .dropdown-toggle:focus {
@@ -3622,14 +3622,14 @@ tbody.collapse.in {
   left: auto;
 }
 .dropup .caret,
-.navbar-fixed-bottom .dropdown .caret {
+.navbar-fixed-bottom .dropdown3 .caret {
   content: "";
   border-top: 0;
   border-bottom: 4px dashed;
   border-bottom: 4px solid \9;
 }
 .dropup .dropdown-menu,
-.navbar-fixed-bottom .dropdown .dropdown-menu {
+.navbar-fixed-bottom .dropdown3 .dropdown-menu {
   top: auto;
   bottom: 100%;
   margin-bottom: 2px;
@@ -5466,7 +5466,7 @@ button.list-group-item-danger.active:focus {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
-.panel-heading > .dropdown .dropdown-toggle {
+.panel-heading > .dropdown3 .dropdown-toggle {
   color: inherit;
 }
 .panel-title {
