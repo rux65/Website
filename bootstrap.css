@@ -43,7 +43,7 @@ template {
   display: none;
 }
 a {
-  background-color: transparent;
+  background-color: #fff;
 }
 a:active,
 a:hover {
@@ -62,7 +62,12 @@ dfn {
 h1 {
   margin: .67em 0;
   font-size: 2em;
+<<<<<<< HEAD
   font-family: cursive;
+=======
+  font-famly: cursive
+
+>>>>>>> 8628c5d340623efa1094a78d4ed04df9a69e18ef
 }
 mark {
   color: #000;
@@ -170,7 +175,7 @@ input[type="search"]::-webkit-search-decoration {
 fieldset {
   padding: .35em .625em .75em;
   margin: 0 2px;
-  border: 1px solid #c0c0c0;
+  border: 0px solid #c0c0c0;
 }
 legend {
   padding: 0;
@@ -256,11 +261,11 @@ th {
   }
   .table td,
   .table th {
-    background-color: #fff !important;
+    background-color: #ffffff !important;
   }
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid #ddd !important;
+    border: 0px solid #ddd !important;
   }
 }
 @font-face {
@@ -1268,6 +1273,7 @@ h6 .small,
 h1,
 .h1 {
   font-size: 36px;
+  font-family: cursive;
 }
 h2,
 .h2 {
@@ -2252,7 +2258,7 @@ pre code {
   }
 }
 table {
-  background-color: transparent;
+  background-color: #fff;
 }
 caption {
   padding-top: 8px;
@@ -2306,7 +2312,7 @@ th {
   padding: 5px;
 }
 .table-bordered {
-  border: 1px solid #ddd;
+  border: 0px solid #ddd;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
