@@ -43,7 +43,7 @@ template {
   display: none;
 }
 a {
-  background-color: transparent;
+  background-color: #fff;
 }
 a:active,
 a:hover {
@@ -62,7 +62,8 @@ dfn {
 h1 {
   margin: .67em 0;
   font-size: 2em;
-  
+  font-famly: cursive
+
 }
 mark {
   color: #000;
@@ -2253,7 +2254,7 @@ pre code {
   }
 }
 table {
-  background-color: transparent;
+  background-color: #fff;
 }
 caption {
   padding-top: 8px;
@@ -2307,7 +2308,7 @@ th {
   padding: 5px;
 }
 .table-bordered {
-  border: 1px solid #ddd;
+  border: 0px solid #ddd;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
