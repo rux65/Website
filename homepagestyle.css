@@ -1,17 +1,23 @@
-	input {
-	      border: 0;
-	      padding: 10px;
-	      font-size: 20px;
-	    }
-	    input[type="submit"] {
-	      background: red;
-	      color: white;
-	    }
-	    
-	    h6 }
-	      color: grey;
-	    }
+input {
+	border: 0;
+	padding: 10px;
+	font-size: 20px;
+}
 
-	a {
-		margin: 200px 200px 200px 200px;
-		}
+input[type="submit"] {
+	background: red;
+	color: white;
+}
+	   
+h6 }
+	color: grey; 
+}
+
+a {
+	margin: 20px 20px 20px 20px;
+}
+
+body {
+	background-size: cover;
+	background-position: center;
+}
