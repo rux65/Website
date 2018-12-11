@@ -9,8 +9,13 @@ input[type="submit"] {
 	color: white;
 }
 	   
-h6 }
+.h6 {
 	color: grey; 
+}
+
+.h3 {
+	font-family: cursive;
+	font-weight: 400;
 }
 
 a {
