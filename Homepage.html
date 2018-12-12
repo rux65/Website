@@ -14,11 +14,24 @@
    </head>
 
    <body>
-	<center>
+   
+ <div id="stage">
+
+<a href="#"><img class ="sliding" src="media/london-large.jpg"></a>
+<a href="#"><img class ="sliding"  src="media/myanmar-large2.jpg" ></a>
+<a href="#"><img class ="sliding"  src="media/singapore-large.jpg"></a>
+<a href="#"><img class ="sliding"  src="media/miami-large3.jpg"></a>
+<a href="#"><img class ="sliding"  src="media/santiago-large.jpg"></a>
+<a href="#"><img class ="sliding"  src="media/beijing-large2.jpg"></a>
+<a href="#"><img class ="sliding"  src="media/nyc.jpg"></a>
+<a href="#"><img class ="sliding"  src="media/tokyo-large.jpg"></a>
+</div>
+
+ <center>
 	   <h1>Launch</h1>
 	  
 	<a href="index2.html">
-		<img src="media/launch.jpg" alt="Let's Find Out More About Startups" 
+		<img class="rocket" src="media/launch.jpg" alt="Let's Find Out More About Startups" 
 		style="width:250px;height:400px;border:0">
 	</a>
 	<br>
@@ -34,6 +47,28 @@
 		</p><br><br> 	   
 	   
 	</center>
+
+
+
+<script type="text/javascript">
+
+  // Original JavaScript code by Chirp Internet: www.chirp.com.au
+  // Please acknowledge use of this code by including this header.
+
+  window.addEventListener("DOMContentLoaded", function(e) {
+
+    var stage = document.getElementById("stage");
+    var fadeComplete = function(e) { stage.appendChild(arr[0]); };
+    var arr = stage.getElementsByTagName("a");
+    for(var i=0; i < arr.length; i++) {
+      arr[i].addEventListener("animationend", fadeComplete, false);
+    }
+
+  }, false);
+
+</script>
+	
+	
   </body>
  
 </html>
