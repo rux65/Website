@@ -51,7 +51,7 @@
           background-color: #bbb;
           border-radius: 50%;
           display: inline-block;
-          transition: background-color 0.8s ease;
+          transition: background-color 0.4s ease;
         }
 
         .active {
@@ -61,19 +61,19 @@
         /* Fading animation */
         .fade {
           -webkit-animation-name: fade;
-          -webkit-animation-duration: 3.5s;
+          -webkit-animation-duration: 4.5s;
           animation-name: fade;
-          animation-duration: 3.5s;
+          animation-duration: 1.5s;
         }
 
         @-webkit-keyframes fade {
-          from {opacity: .4}
-          to {opacity: 1}
+          from {opacity: 1.0}
+          to {opacity: 1.1}
         }
 
         @keyframes fade {
-          from {opacity: .4}
-          to {opacity: 1}
+          from {opacity: 1.0}
+          to {opacity: 1.1}
         }
 
         /* On smaller screens, decrease text size */
@@ -84,64 +84,64 @@
 
 
         <p></p>
-
-        <div class="slideshow-container">
+		<section style="text-align:center; background:rgba(93, 109, 126,1); width:100%; padding-top:2rem">
+        <div class="slideshow-container" >
 
         <div class="mySlides fade">
-          <div class="numbertext">1 / 23</div>
+          <div class="numbertext">1 / 11</div>
           <img src="media/nyc.jpg" width="600px", height="350px" >
           <div class="text">Tech StartUp Hub: New York City</div>
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">2 / 23</div>
+          <div class="numbertext">2 / 11</div>
           <img src="media/jakarta.jpg" width="600px" height="350px">
           <div class="text">Tech StartUp Hub: Jakarta</div>
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">3 / 23</div>
+          <div class="numbertext">3 / 11</div>
           <img src="media/stockholm.jpg" width="600px" height="350px">
           <div class="text">Tech StartUp Hub: Stockholm</div>
         </div>
 
 		<div class="mySlides fade">
-          <div class="numbertext">4 / 23</div>
+          <div class="numbertext">4 / 11</div>
           <img src="media/berlin.jpg" width="600px" height="350px">
           <div class="text">Tech StartUp Hub: Berlin</div>
         </div>
 		<div class="mySlides fade">
-          <div class="numbertext">5 / 23</div>
+          <div class="numbertext">5 / 11</div>
           <img src="media/hong.jpg" width="600px" height="350px">
           <div class="text">Tech StartUp Hub: Hong Kong</div>
         </div>
 		<div class="mySlides fade">
-          <div class="numbertext">6 / 23</div>
+          <div class="numbertext">6 / 11</div>
           <img src="media/singapore_gardens.jpg" width="600px" height="350px">
           <div class="text">Tech StartUp Hub: Singapore</div>
         </div>
 		<div class="mySlides fade">
-          <div class="numbertext">7 / 23</div>
+          <div class="numbertext">7 / 11</div>
           <img src="media/beijing.jpg" width="600px" height="350px">
           <div class="text">Tech StartUp Hub: Beijing</div>
         </div>
 		<div class="mySlides fade">
-          <div class="numbertext">8 / 23</div>
+          <div class="numbertext">8 / 11</div>
           <img src="media/Tokyo_Asakusa_Kannon.jpg" width="600px" height="350px">
           <div class="text">Tech StartUp Hub: Tokyo</div>
         </div>
 		<div class="mySlides fade">
-          <div class="numbertext">9 / 23</div>
+          <div class="numbertext">9 / 11</div>
           <img src="media/San Francisco.jpg" width="600px" height="350px">
           <div class="text">Tech StartUp Hub: San Francisco</div>
         </div>
 		<div class="mySlides fade">
-          <div class="numbertext">10 / 23</div>
+          <div class="numbertext">10/11 </div>
           <img src="media/bangalore.jpg" width="600px" height="350px">
           <div class="text">Tech StartUp Hub: Bangalore</div>
         </div>
 		<div class="mySlides fade">
-          <div class="numbertext">11 / 23</div>
+          <div class="numbertext">11/11 </div>
           <img src="media/miami.jpg" width="600px" height="350px">
           <div class="text">Tech StartUp Hub: Miami</div>
         </div>
@@ -161,7 +161,7 @@
 		  <span class="dot"></span>
 		  <span class="dot"></span>
 		  <span class="dot"></span>
-		  <span class="dot"></span>
+		 
         </div>
 
         <script>
@@ -242,7 +242,7 @@
           <a href="http://www.youtube.com" class="fa fa-youtube"></a>
           <a href="http://www.instagram.com" class="fa fa-instagram"></a>
         </div>
-	       
+	   </section>    
  	<section>
 	<style>
 	    }
@@ -612,8 +612,9 @@ The start-up scene has been boosted after Italy passed a growth decree in 2013, 
 
 				<section class="country1">
 				<p>
+				<button class="dropbtn" id="germany" style="color:#009BFF; font-weight:800; font-size:1.8rem; line-height:1.2rem;" >South Africa</button>
             <div class="dropdown">
-			<button onclick="myFunction37()" class="dropbtn" id="southafrica" >Durban, South Africa</button>
+			<button onclick="myFunction37()" class="dropbtn" id="southafrica" >Durban</button>
                   <div id="myDropdown37" class="dropdown-content">
                      <a href="#">
 
@@ -630,7 +631,7 @@ The start-up scene has been boosted after Italy passed a growth decree in 2013, 
 				<br>
 
 				 <div class="dropdown">
-			<button onclick="myFunction38()" class="dropbtn">Cape Town, South Africa</button>
+			<button onclick="myFunction38()" class="dropbtn">Cape Town</button>
                   <div id="myDropdown38" class="dropdown-content">
                      <a href="#">
 
@@ -1187,12 +1188,13 @@ Co-Creation Hub (CcHUB) provides the space so that young people in Nigeria's fir
          </article>
       </section>
 
-      <center>
-        <h4 style="color:Tomato;">Click on Globe to <br> View World Map</h4>
-	  <a href="map_of_the_world2.html">
-  	    <img src="media/world.jpg" alt="Map of the world" style="width:200px;height:200px;border:0;">
+      <section style="text-align:center; background:rgba(93, 109, 126,1); width:100%">
+        <h4 style="color:Tomato; padding-top:0.5rem">Click on Globe to View World Map</h4>
+		
+	  <a href="map_of_the_world2.html" style="background:rgba(93, 109, 126,1)">
+  	    <img src="media/world.jpg" alt="Map of the world" style="width:100px;height:100px;border:0;">
 	  </a>
-      </center>
+      </section>
 
    </body>
 </html>
