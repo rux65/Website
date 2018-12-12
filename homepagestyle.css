@@ -1,16 +1,48 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body {
+	background-size: cover;
+	background-position: center;
+	background:#f2f2f2;
+	max-width:90%;
+}
+
+center{
+	
+	margin-top:10%;	
+	position:absolute; 
+	z-index: 30;
+	background:rgba(255,255,255,0.6);
+	border-radius:50%;
+	padding:2rem;
+	left:35%;
+}
+
+.rocket{
+	z-index:40;
+}
+	
+
 input {
-	border: 0;
+	border: 1 x solid rgb(46, 64, 83);
 	padding: 10px;
 	font-size: 20px;
+	border-radius:10px;
 }
 
 input[type="submit"] {
 	background: red;
 	color: white;
+	margin-left:10px;
+	
 }
 	   
 .h6 {
 	color: grey; 
+	
 }
 
 .h3 {
@@ -22,7 +54,50 @@ a {
 	margin: 20px 20px 20px 20px;
 }
 
-body {
-	background-size: cover;
-	background-position: center;
+#stage{
+	margin:0 auto;
+	text-align:center;
+	
 }
+ 
+
+  #stage a {
+    position:absolute;
+	width:90%;
+	height:600px;
+	background-image: cover;
+	position: center;
+	overflow:hidden;
+	left:5%;
+	right:2%;
+	top:5%;
+	margin:0;
+	text-align:center;
+	
+  }
+  #stage a img {
+    border:none;
+    background: #fff;
+	width:100%;
+	text-align:center;
+	
+	
+  }
+
+  #stage a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+  }
+  #stage a:nth-of-type(2) {
+    z-index: 10;
+  }
+  #stage a:nth-of-type(n+3) {
+    display: none;
+  }
+
+  @keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+  }
