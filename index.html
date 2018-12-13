@@ -3,11 +3,11 @@
    <head>
 	<link href='bootstrap.css' rel='stylesheet'>
 	<link rel="stylesheet" href="homepagestyle.css">
-
-      <script src="buttons.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+     
       <title>Homepage</title>
 	   
-	  <body style="background-image:url('media/homepage.jpg')">
 
 
    
@@ -28,12 +28,9 @@
 </div>
 
  <center>
-	   <a href="index2.html"><h1>Launch</h1></a>
-	 <br>
-	 <br>
-	 <br>
-	   
-
+	   <a class="launch" id="launch" href="index2.html"><h1>Launch</h1></a>
+	<img id="logo" style="position:absolute;transform: rotate(90deg); border:none; margin-left:-15%; margin-top:-5%;" src="media/28356.svg" height="100px" width="100px" class="centered"/>
+	   <br><br><br>
 		<input type="email" placeholder="Sign Me Up"<br>
 		<input type="submit"><br>
 		<p>
@@ -59,6 +56,17 @@
     }
 
   }, false);
+
+
+
+ $(document).ready(function(){
+ $("#launch").click( function(){
+  $("#logo").animate( { left: "+=800" }, 2000, function(){
+    document.location = $("#launch").attr('href');  
+  });
+  return false;
+ });
+});
 
 </script>
 	
